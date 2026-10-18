@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="VangtiKey" parent="Widget.AppCompat.Button">
+
+        <item name="android:background">
+            @drawable/keypad_button_background
+        </item>
+
+        <item name="backgroundTint">@null</item>
+
+        <item name="android:textColor">#333333</item>
+
+        <item name="android:textSize">@dimen/text_small</item>
+
+        <item name="android:layout_height">@dimen/key_height</item>
+
+        <item name="android:layout_margin">@dimen/key_gap</item>
+
+        <item name="android:minWidth">@dimen/minimum_touch_size</item>
+        <item name="android:minHeight">@dimen/minimum_touch_size</item>
+
+<!--        <item name="android:minHeight">@dimen/key_height</item>-->
+
+<!--        <item name="android:minWidth">48dp</item>-->
+
+<!--        <item name="android:minWidth">@dimen/zero_size</item>-->
+
+        <item name="android:padding">@dimen/zero_size</item>
+
+    </style>
+
+</resources>

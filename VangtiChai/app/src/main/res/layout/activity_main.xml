@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Green application header -->
+    <TextView
+        android:id="@+id/appHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="#008577"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/header_padding"
+        android:paddingEnd="@dimen/header_padding"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Display entered amount -->
+    <TextView
+        android:id="@+id/takaDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_top_margin"
+        android:text="@string/taka_label"
+        android:textColor="#333333"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintTop_toBottomOf="@id/appHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Main content contains notes and keypad -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="@dimen/content_padding"
+        android:layout_marginTop="@dimen/content_top_margin"
+        app:layout_constraintTop_toBottomOf="@id/takaDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- LEFT SIDE: Taka notes -->
+        <LinearLayout
+            android:id="@+id/noteList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/note500"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_500"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note100"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_100"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_50"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_20"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_10"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_5"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_2"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/note1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_height"
+                android:gravity="center_vertical"
+                android:text="@string/note_1"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+        <!-- RIGHT SIDE: Numeric keypad -->
+        <GridLayout
+            android:id="@+id/keypad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:layout_marginTop="@dimen/keypad_top_margin"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <!-- First row: 1 2 3 -->
+            <Button
+                android:id="@+id/btn1"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_3" />
+
+            <!-- Second row: 4 5 6 -->
+            <Button
+                android:id="@+id/btn4"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_6" />
+
+            <!-- Third row: 7 8 9 -->
+            <Button
+                android:id="@+id/btn7"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_9" />
+
+            <!-- Fourth row: 0 and CLEAR -->
+            <Button
+                android:id="@+id/btn0"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:text="@string/digit_0" />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/VangtiKey"
+                android:layout_width="0dp"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="2"
+                android:text="@string/clear_button" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
