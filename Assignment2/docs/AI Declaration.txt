@@ -1,0 +1,57 @@
+# AI USAGE DECLARATION
+
+**Name: Ishmam Hossain 
+**Student ID: 22201445
+**Assignment: CSE 489 – Assignment 2  
+**Date: 01/11/2026
+
+### 1. AI TOOLS USED
+ ChatGPT
+
+### 2. PURPOSE OF AI USE
+ Learning/understanding concepts  
+ Debugging my code  
+ Generating code snippets  
+ Design/styling ideas  
+
+### 3. DESCRIPTION OF AI USE
+
+I used ChatGPT as an assistant during the development of my Android application using Kotlin and XML. AI assistance was used to understand Android components, explore implementation approaches, generate and refine code snippets, and troubleshoot development issues.
+
+Specifically, ChatGPT assisted with implementing navigation between fragments, handling custom and system broadcast receivers, displaying battery information, implementing audio and video playback controls and loading online images with pinch-to-zoom functionality.
+
+AI was also used to understand Android lifecycle methods, event listeners, Intent-based communication, MediaPlayer, VideoView, SeekBar, ScaleGestureDetector, background threading and UI updates.
+
+I reviewed the AI-assisted code and used ChatGPT to clarify the functionality of individual methods and implementation decisions.
+
+### 4. AI-ASSISTED SECTIONS
+
+**File:** MainActivity.kt  
+**Section:** Navigation Drawer setup and Fragment navigation.
+
+**Files:** BroadcastFragment.kt, CustomInputActivity.kt, CustomReceiverActivity.kt, BatteryActivity.kt  
+**Section:** Broadcast receiver functionality, Intent communication, and battery status monitoring.
+
+**File:** ImageScaleFragment.kt  
+**Section:** Online image loading, background threading, and pinch-to-zoom implementation.
+
+**File:** AudioFragment.kt  
+**Section:** MediaPlayer integration, playback controls, SeekBar synchronization and audio timer.
+
+**File:** VideoFragment.kt  
+**Section:** VideoView integration, playback controls, SeekBar synchronization and video timer.
+
+**XML Layout Files**  
+**Section:** UI layout structure, navigation components and interface styling.
+
+### 5. DECLARATION
+
+I declare that:
+
+- This disclosure accurately represents my use of AI assistance.
+- I have reviewed and understand the code included in my submission.
+- I can explain and modify the implemented functionality if required.
+- I take full responsibility for my submitted assignment.
+
+**Signature:** _______________________  
+**Date:** ___________________________

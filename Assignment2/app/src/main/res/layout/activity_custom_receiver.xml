@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/receiverMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/receiverToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:title="Received Message"
+        app:titleTextColor="#333333"
+        app:navigationIconTint="#333333" />
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/receivedMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting for message..."
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
